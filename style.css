@@ -1,0 +1,142 @@
+@import url();
+
+body{
+  background-image: url(./skt.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* min-height: 70vh; */
+  /* padding: 0; */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(72, 73, 72);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 139%;
+
+}
+@media only screen and (min-width:500px) {
+body{
+  min-height: 100vh;
+}
+}
+
+.container{
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  max-width: 500px;
+  min-width: 250px;
+  background: white;
+  background-image: radial-gradient
+  (grey,
+  7.2%,
+  transparent 0);
+  background-size: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 7px 2px;
+  padding: 1rem;
+}
+
+.heading{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.heading_title{
+  transform: rotate(
+    2deg
+  );
+  padding: 0.2rem 1.2rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  background-color: aqua;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width:500px) {
+  .heading_title{
+    font-size: 2rem;
+  }
+
+}
+.heading_image{
+  width: 24%;
+}
+.form_label{
+  display: block;
+  margin-bottom: o.5rem;
+
+}
+
+.form_input{
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 0.7rem;
+  border-bottom-right-radius: 15px 3px;
+  border-bottom-left-radius: 15px 3px;
+  border: solid 3px transparent;
+  border-bottom: dashed 3px plum;
+  font-family: Arial, Helvetica, sans-serif, cursive;
+  font-size: 1rem;
+  color: black;
+  width: 70%;
+  margin-bottom: 20px;
+
+}
+
+.form_input:focus{
+  outline: none;
+  border: solid 3px plum;
+}
+
+@media only screen and (min-width:500px) {
+  .form_input{
+    width: 60%;
+  }
+}
+
+.button{
+  padding: 0;
+  border: none;
+  transform: rotate(
+    4deg
+  );
+  cursor: pointer;
+  transform-origin: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 grey;
+  transition: all 0.3s cubic-bezier(grey);
+  background-image: url(./images.png);
+  background-color: aqua;
+}
+.button span {
+  background-color: white;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid grey;
+
+}
+ .button:active,
+ .button:focus{
+  transform: translateY(4px);
+  padding-bottom: 0px;
+  outline: 0;
+ }
+ .toDoList{
+  text-align: left;
+ }
+ .toDoList li {
+  position: relative;
+  padding: 0.5rem;
+ }
+ .toDoList li:hover{
+  text-decoration: line-through wavy rgb(66, 194, 245);
+ }
